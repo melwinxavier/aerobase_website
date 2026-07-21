@@ -60,7 +60,7 @@ export function Subscribe() {
                   className="group grid grid-cols-1 items-center gap-4 border-t border-white/[0.06] py-6 md:grid-cols-[160px_1fr_auto]"
                 >
                   <div>
-                    <MonoLabel dotColor="#F94300" className="!text-brand-red">{u.tag}</MonoLabel>
+                    <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">{u.tag}</MonoLabel>
                     <MonoLabel className="mt-1 block !text-fg-dim">{u.date}</MonoLabel>
                   </div>
                   <p className="text-[15px] text-fg">{u.title}</p>

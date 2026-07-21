@@ -15,7 +15,7 @@ function QoEGrid() {
           key={i}
           className="aspect-square rounded-md border"
           style={{
-            borderColor: red.has(i) ? "rgba(249,67,0,0.7)" : "rgba(255,255,255,0.14)",
+            borderColor: red.has(i) ? "rgba(255,45,45,0.7)" : "rgba(255,255,255,0.14)",
             backgroundColor: lit.has(i) ? "rgba(255,255,255,0.04)" : "transparent",
           }}
           animate={red.has(i) ? { opacity: [0.5, 1, 0.5] } : {}}
@@ -37,7 +37,7 @@ function AnalyticsDeco() {
         <polyline
           points="0,30 30,28 60,20 90,26 120,10 150,22 180,14 210,24 240,18"
           fill="none"
-          stroke="#498099"
+          stroke="#4d8bff"
           strokeWidth="2"
         />
       </svg>
@@ -63,7 +63,7 @@ export function BentoGrid() {
                 <QoEGrid />
               </div>
               <div>
-                <MonoLabel dotColor="#F94300" className="!text-brand-red">
+                <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">
                   PHASES · METALLURGICAL SIMULATION
                 </MonoLabel>
                 <h3 className="mt-4 max-w-xs text-[22px] font-normal leading-snug text-fg">
@@ -129,7 +129,7 @@ export function BentoGrid() {
                 <AnalyticsDeco />
               </div>
               <div>
-                <MonoLabel dotColor="#498099" className="!text-brand-blue">
+                <MonoLabel dotColor="#4d8bff" className="!text-brand-blue">
                   CALIBRATED ON REAL DATA
                 </MonoLabel>
                 <h3 className="mt-4 max-w-sm text-[22px] font-normal leading-snug text-fg">

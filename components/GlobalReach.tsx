@@ -59,7 +59,7 @@ export function GlobalReach() {
                   height: r,
                   left: -r / 2,
                   top: -r / 2,
-                  borderColor: i === 2 ? "rgba(249,67,0,0.35)" : "rgba(255,255,255,0.08)",
+                  borderColor: i === 2 ? "rgba(255,45,45,0.35)" : "rgba(255,255,255,0.08)",
                   borderStyle: i === 2 ? "dashed" : "solid",
                 }}
                 animate={{ opacity: [0.3, 0.7, 0.3] }}

@@ -44,7 +44,7 @@ export function Announcements() {
                 className="group grid grid-cols-1 items-center gap-6 border-t border-white/[0.06] py-8 md:grid-cols-[120px_260px_1fr_auto]"
               >
                 <div>
-                  <MonoLabel dotColor="#F94300" className="!text-brand-red">NEWS</MonoLabel>
+                  <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">NEWS</MonoLabel>
                   <MonoLabel className="mt-1 block !text-fg-dim">{n.date}</MonoLabel>
                 </div>
                 <div className={`grid h-28 place-items-center rounded-xl bg-gradient-to-br ${n.accent}`}>

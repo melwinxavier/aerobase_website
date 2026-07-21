@@ -22,11 +22,11 @@ const BENEFITS = [
 export function Analytics() {
   return (
     <section className="relative border-t border-white/[0.05] py-20 md:py-28">
-      <ChapterMarker index="3.0" title="The PHASES Platform" color="#498099" />
+      <ChapterMarker index="3.0" title="The PHASES Platform" color="#4d8bff" />
 
       <Container className="md:pl-[280px]">
         <Reveal>
-          <MonoLabel dotColor="#498099" className="!text-brand-blue">
+          <MonoLabel dotColor="#4d8bff" className="!text-brand-blue">
             THE PHASES PLATFORM
           </MonoLabel>
           <h2 className="mt-6 display max-w-2xl text-[clamp(1.9rem,4vw,3rem)] text-fg">
@@ -62,13 +62,13 @@ export function Analytics() {
             <svg viewBox="0 0 800 120" className="mt-6 h-28 w-full">
               <defs>
                 <linearGradient id="ag" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="rgba(73,128,153,0.4)" />
-                  <stop offset="100%" stopColor="rgba(73,128,153,0)" />
+                  <stop offset="0%" stopColor="rgba(77,139,255,0.4)" />
+                  <stop offset="100%" stopColor="rgba(77,139,255,0)" />
                 </linearGradient>
               </defs>
               <polyline
                 points="0,90 60,70 120,80 180,50 240,66 300,40 360,58 420,30 480,50 540,26 600,44 660,20 720,40 800,28"
-                fill="none" stroke="#498099" strokeWidth="2"
+                fill="none" stroke="#4d8bff" strokeWidth="2"
               />
               <polygon
                 points="0,120 0,90 60,70 120,80 180,50 240,66 300,40 360,58 420,30 480,50 540,26 600,44 660,20 720,40 800,28 800,120"

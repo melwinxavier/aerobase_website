@@ -66,11 +66,11 @@ const BENEFITS = [
 export function EnhanceQoE() {
   return (
     <section className="relative border-t border-white/[0.05] py-20 md:py-28">
-      <ChapterMarker index="1.0" title="The Approach" color="#F94300" />
+      <ChapterMarker index="1.0" title="The Approach" color="#ff2d2d" />
 
       <Container className="md:pl-[280px]">
         <Reveal>
-          <MonoLabel dotColor="#F94300" className="!text-brand-red">
+          <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">
             THE APPROACH
           </MonoLabel>
           <h2 className="mt-6 display max-w-2xl text-[clamp(1.9rem,4vw,3rem)] text-fg">
@@ -128,7 +128,7 @@ export function EnhanceQoE() {
                 <polyline
                   points="0,45 25,20 45,50 70,15 95,48 120,25 145,55 170,10 195,40 220,30 245,52 270,18 300,44 320,30"
                   fill="none"
-                  stroke="#F94300"
+                  stroke="#ff2d2d"
                   strokeWidth="1.5"
                 />
               </svg>

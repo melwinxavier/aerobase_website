@@ -19,7 +19,7 @@ function Word({
   const color = useTransform(
     progress,
     range,
-    highlight ? ["rgba(249,67,0,0.25)", "rgb(249,67,0)"] : ["rgba(239,239,239,0.2)", "rgb(239,239,239)"]
+    highlight ? ["rgba(255,45,45,0.25)", "rgb(255,45,45)"] : ["rgba(239,239,239,0.2)", "rgb(239,239,239)"]
   );
   return (
     <motion.span style={{ opacity, color }} className="mr-[0.28em] inline-block">
