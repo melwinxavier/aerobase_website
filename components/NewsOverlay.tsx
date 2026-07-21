@@ -13,21 +13,21 @@ type Item = {
 
 const ITEMS: Item[] = [
   {
-    tag: "NEWS",
-    date: "28 MAY",
-    title: "Bequant Partners with Winncom Technologies to Accelerate Expansion Across North America",
+    tag: "PRODUCT",
+    date: "PHASES COPILOT",
+    title: "Phases Copilot is live — an AI assistant that sets up, runs and interprets phase-transformation models",
     accent: "from-[#2a2f3a] to-[#141518]",
   },
   {
-    tag: "PRODUCT UPDATE",
-    date: "JULY 6, 2026",
-    title: "Bequant Releases R5.1.1, with applications flow speed information",
+    tag: "RESEARCH",
+    date: "GENMAT",
+    title: "Aerobase joins GENMAT — Europe’s first multi-scale materials foundation model (Horizon Europe)",
     accent: "from-[#20231a] to-[#141518]",
   },
   {
     tag: "CASE STUDY",
     date: "",
-    title: "InfoWest reduces packet ReTx by 80% while improving customers’ video experience",
+    title: "SafeLight predicts mega-cast crash failure to 3–5% on a customer program, versus 12–18% for legacy models",
     accent: "from-[#3a1f18] to-[#141518]",
   },
 ];

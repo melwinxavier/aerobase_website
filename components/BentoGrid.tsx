@@ -15,7 +15,7 @@ function QoEGrid() {
           key={i}
           className="aspect-square rounded-md border"
           style={{
-            borderColor: red.has(i) ? "rgba(255,45,45,0.7)" : "rgba(255,255,255,0.14)",
+            borderColor: red.has(i) ? "rgba(249,67,0,0.7)" : "rgba(255,255,255,0.14)",
             backgroundColor: lit.has(i) ? "rgba(255,255,255,0.04)" : "transparent",
           }}
           animate={red.has(i) ? { opacity: [0.5, 1, 0.5] } : {}}
@@ -37,7 +37,7 @@ function AnalyticsDeco() {
         <polyline
           points="0,30 30,28 60,20 90,26 120,10 150,22 180,14 210,24 240,18"
           fill="none"
-          stroke="#4d8bff"
+          stroke="#498099"
           strokeWidth="2"
         />
       </svg>
@@ -51,7 +51,7 @@ export function BentoGrid() {
       <Container>
         <Reveal>
           <h2 className="display max-w-2xl text-[clamp(2rem,4.5vw,3.1rem)] text-fg">
-            AI-powered optimization solving complex problems.
+            Physics-based AI solving materials &amp; manufacturing problems.
           </h2>
         </Reveal>
 
@@ -63,27 +63,28 @@ export function BentoGrid() {
                 <QoEGrid />
               </div>
               <div>
-                <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">
-                  ENHANCE SUBSCRIBER QOE
+                <MonoLabel dotColor="#F94300" className="!text-brand-red">
+                  PHASES · METALLURGICAL SIMULATION
                 </MonoLabel>
                 <h3 className="mt-4 max-w-xs text-[22px] font-normal leading-snug text-fg">
-                  Higher speed, lower latency and less packet loss
+                  One model, four simulators — computed from chemistry
                 </h3>
                 <p className="mt-4 max-w-xs text-[13.5px] leading-relaxed text-fg-muted">
-                  Improve your network quality and avoid low streaming quality, dropped
-                  video calls, mediocre speed test results and high gaming latency.
+                  Heat-treatment simulation, CCT/TTT generation, resistance spot welding
+                  and a virtual Gleeble — each computed from composition, not looked up
+                  per grade.
                 </p>
                 <div className="mt-8 flex items-center gap-4">
                   <div>
-                    <MonoLabel>SUPPORT CALLS</MonoLabel>
+                    <MonoLabel>FULL CCT DIAGRAM</MonoLabel>
                     <div className="mt-1 flex items-center gap-2">
-                      <span className="text-3xl font-light text-fg">-35%</span>
+                      <span className="text-3xl font-light text-fg">&lt;5s</span>
                       <span className="text-brand-green">↓</span>
                     </div>
                   </div>
                   <div className="ml-4 border-l border-white/10 pl-4">
-                    <MonoLabel>CHADD GILES</MonoLabel>
-                    <MonoLabel className="!text-fg-dim">CTO, RESOUND NETWORKS</MonoLabel>
+                    <MonoLabel>VS WEEKS</MonoLabel>
+                    <MonoLabel className="!text-fg-dim">BY HAND OR EXPERIMENT</MonoLabel>
                   </div>
                 </div>
               </div>
@@ -99,9 +100,9 @@ export function BentoGrid() {
                   <div className="absolute right-0 top-6 h-40 w-[70%] rotate-[-18deg] bg-[linear-gradient(90deg,transparent,rgba(255,180,120,0.8),transparent)] blur-[10px]" />
                 </div>
                 <div className="relative">
-                  <MonoLabel>BQN PLATFORM</MonoLabel>
+                  <MonoLabel>SOLVER-READY</MonoLabel>
                   <h3 className="mt-3 max-w-xs text-[22px] font-normal leading-snug text-fg">
-                    Bequant supports network nodes up to 400 Gbps
+                    Drop-in material cards for LS-DYNA, Abaqus, Radioss &amp; 4 more
                   </h3>
                 </div>
               </article>
@@ -112,9 +113,9 @@ export function BentoGrid() {
                   <Sun className="h-7 w-7 animate-spinSlow text-fg-muted" strokeWidth={1} />
                 </div>
                 <div>
-                  <MonoLabel>ACM FEATURE</MonoLabel>
+                  <MonoLabel>AGENT-DRIVEN</MonoLabel>
                   <h3 className="mt-3 text-[22px] font-normal leading-snug text-fg">
-                    AI-powered congestion management
+                    AI agents set up, run and interpret the models
                   </h3>
                 </div>
               </article>
@@ -128,15 +129,15 @@ export function BentoGrid() {
                 <AnalyticsDeco />
               </div>
               <div>
-                <MonoLabel dotColor="#4d8bff" className="!text-brand-blue">
-                  ADVANCED NETWORK ANALYTICS
+                <MonoLabel dotColor="#498099" className="!text-brand-blue">
+                  CALIBRATED ON REAL DATA
                 </MonoLabel>
                 <h3 className="mt-4 max-w-sm text-[22px] font-normal leading-snug text-fg">
-                  Advanced subscriber, DPI Application &amp; network metrics
+                  Characterized, not assumed
                 </h3>
                 <p className="mt-4 max-w-sm text-[13.5px] leading-relaxed text-fg-muted">
-                  Detect saturated Access Points, OLT ports or subscribers, identify
-                  customer plan upsells, and ensure fast support call diagnosis.
+                  Test campaigns run at partner facilities — RISE, Swerim and LTU — so
+                  every model is calibrated against measured data, not fit to a guess.
                 </p>
               </div>
             </article>
@@ -151,26 +152,26 @@ export function BentoGrid() {
               </div>
               <div>
                 <MonoLabel dotColor="#e8b23d" className="!text-brand-gold">
-                  MAXIMIZE NETWORK CAPACITY
+                  SAFELIGHT · CRASH FAILURE
                 </MonoLabel>
                 <h3 className="mt-4 max-w-xs text-[22px] font-normal leading-snug text-fg">
-                  More subscribers per Access Point or OLT Port
+                  Mega-cast crash, predicted to 3–5%
                 </h3>
                 <p className="mt-4 max-w-xs text-[13.5px] leading-relaxed text-fg-muted">
-                  Shaping based on DPI and network topology allows more subscribers per
-                  Access Point or OLT Port without quality loss.
+                  A purpose-built crash material model for high-pressure die-cast
+                  aluminium — drop-in for LS-DYNA, Radioss and Abaqus.
                 </p>
                 <div className="mt-8 flex items-center gap-4">
                   <div>
-                    <MonoLabel>SUBSCRIBERS PER AP</MonoLabel>
+                    <MonoLabel>CRASH PREDICTION ERROR</MonoLabel>
                     <div className="mt-1 flex items-center gap-2">
-                      <span className="text-3xl font-light text-fg">+10%</span>
-                      <span className="text-brand-green">↑</span>
+                      <span className="text-3xl font-light text-fg">3–5%</span>
+                      <span className="text-brand-green">↓</span>
                     </div>
                   </div>
                   <div className="ml-4 border-l border-white/10 pl-4">
-                    <MonoLabel>ANIBAL ENRÍQUEZ</MonoLabel>
-                    <MonoLabel className="!text-fg-dim">CEO, COMUNICATE</MonoLabel>
+                    <MonoLabel>VS 12–18%</MonoLabel>
+                    <MonoLabel className="!text-fg-dim">LEGACY GISSMO / CRACHFEM</MonoLabel>
                   </div>
                 </div>
               </div>

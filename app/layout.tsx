@@ -17,9 +17,9 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bequant – Maximize your network",
+  title: "Aerobase – AI agents that know the physics",
   description:
-    "The most advanced technology to maximize your network performance and visibility.",
+    "Aerobase builds physics-based AI for materials and manufacturing — digital metallurgy, additive, and crash — grounded in real experiments, not guesses.",
 };
 
 export default function RootLayout({

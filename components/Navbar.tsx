@@ -6,7 +6,7 @@ import { ChevronsRight, ChevronRight } from "lucide-react";
 import { Wordmark } from "./Logo";
 import { cn } from "@/lib/cn";
 
-const NAV = ["PRODUCT", "COMPANY", "BUY", "CONTACT"];
+const NAV = ["PRODUCTS", "RESEARCH", "ABOUT", "CONTACT"];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -29,7 +29,7 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-[64px] max-w-container items-center justify-between px-6 md:px-10">
-        <a href="#top" aria-label="Bequant home">
+        <a href="#top" aria-label="Aerobase home">
           <Wordmark />
         </a>
 
@@ -57,7 +57,7 @@ export function Navbar() {
             href="#"
             className="mono-label group inline-flex items-center gap-2 rounded-md border border-brand-green/70 bg-brand-green/10 px-3.5 py-2.5 text-brand-green transition-colors hover:bg-brand-green/20"
           >
-            GET STARTED
+            TRY PHASES
             <ChevronsRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>

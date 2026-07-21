@@ -9,8 +9,8 @@ export function Vision() {
       <Container>
         <Reveal>
           <h2 className="display max-w-4xl text-[clamp(1.8rem,4vw,3rem)] text-fg">
-            We are dedicated to advancing technology that maximizes network quality by
-            optimizing the use of available resources.
+            We make material models accessible to simulation engineers — computed and
+            measured, not assumed.
           </h2>
         </Reveal>
 
@@ -18,11 +18,11 @@ export function Vision() {
           <Reveal>
             <article
               className="flex min-h-[240px] flex-col justify-between rounded-2xl border border-white/[0.06] p-8"
-              style={{ background: "radial-gradient(120% 120% at 100% 0%, rgba(255,45,45,0.12), transparent 55%), #141518" }}
+              style={{ background: "radial-gradient(120% 120% at 100% 0%, rgba(249,67,0,0.12), transparent 55%), #141518" }}
             >
-              <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">THE BIGGER VISION</MonoLabel>
+              <MonoLabel dotColor="#F94300" className="!text-brand-red">THE BIGGER VISION</MonoLabel>
               <div className="flex items-end justify-between">
-                <span className="text-2xl font-light text-fg">About Bequant</span>
+                <span className="text-2xl font-light text-fg">About Aerobase</span>
                 <PillButton variant="dark">READ</PillButton>
               </div>
             </article>

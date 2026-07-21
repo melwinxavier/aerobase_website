@@ -25,21 +25,21 @@ export default function Home() {
 
       <EnhanceQoE />
       <TestimonialReveal
-        quote="We thought we were doing all we could with our original QoE solution, but after installing Bequant next-gen QoE our customer support calls dropped by 35%."
-        highlightWords={["customer", "support", "calls", "dropped", "by", "35%."]}
-        name="CHADD GILES"
-        role="CTO"
-        company="RESOUND NETWORKS"
-        country="USA"
+        quote="Data accelerated research is hastening the model development process. Industry all over stands to gain from this if ever the tools are utilized imaginatively."
+        highlightWords={["Data", "accelerated", "research", "hastening", "the", "model", "development", "process."]}
+        name="BIJISH BABU"
+        role="FOUNDER & CEO"
+        company="AEROBASE"
+        country="SWEDEN"
       />
       <Bufferbloat />
       <TestimonialReveal
-        quote="We already had a solid QoE solution in place, but decided to take Bequant up on their 30-day trial — and we're glad we did! Our network latency dropped from 30 ms to 15 ms, and retransmissions fell by 80%. Bequant's team truly goes above and beyond!"
-        highlightWords={["latency", "dropped", "from", "30", "ms", "to", "15", "retransmissions", "fell", "80%."]}
-        name="CASSIDY LARSON"
+        quote="Where most tools guess a material's behavior from a dataset, we compute it from thermodynamics and validate it against measured data. Computed and measured, not assumed."
+        highlightWords={["compute", "it", "from", "thermodynamics", "Computed", "and", "measured,", "not", "assumed."]}
+        name="DANIEL BERGLUND"
         role="CTO"
-        company="INFOWEST"
-        country="USA"
+        company="AEROBASE"
+        country="SWEDEN"
       />
       <LogoStrip />
 
@@ -47,12 +47,12 @@ export default function Home() {
 
       <Analytics />
       <TestimonialReveal
-        quote="The DPI and network visibility from Bequant allow us to see what is happening in our network in real-time. Our customer support can diagnose everyday problems with it, and it also helps us detecting those areas of the network where we are approaching congestion."
-        highlightWords={["real-time.", "diagnose", "everyday", "problems"]}
-        name="VICTOR DE LA NUEZ"
-        role="CEO"
-        company="WIFI CANARIAS"
-        country="SPAIN"
+        quote="Every model is calibrated against physical tests run at partner facilities — RISE, Swerim and LTU. The behavior is characterized, not assumed."
+        highlightWords={["calibrated", "against", "physical", "tests", "characterized,", "not", "assumed."]}
+        name="HENRIK TERSING"
+        role="SIMULATION TECHNOLOGY SPECIALIST"
+        company="AEROBASE"
+        country="SWEDEN"
       />
 
       <Vision />

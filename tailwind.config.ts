@@ -23,10 +23,10 @@ const config: Config = {
           dim: "#5c5c61",
         },
         brand: {
-          red: "#ff2d2d",
+          red: "#F94300",
           green: "#00bf2a",
           gold: "#e8b23d",
-          blue: "#4d8bff",
+          blue: "#498099",
         },
       },
       fontFamily: {

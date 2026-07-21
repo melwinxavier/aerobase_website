@@ -5,21 +5,21 @@ import { LogoMark } from "./Logo";
 
 const COLS: { title: string; links: string[] }[] = [
   {
-    title: "PRODUCT",
+    title: "PRODUCTS",
     links: [
-      "ENHANCE SUBSCRIBER QOE",
-      "MAXIMIZE NETWORK CAPACITY",
-      "ADVANCED NETWORK ANALYTICS",
-      "BQN PLATFORM",
+      "PHASES",
+      "SAFELIGHT",
+      "AEROCRAFT",
+      "CALIBER",
     ],
   },
   {
     title: "GENERAL",
-    links: ["BUY", "CUSTOMERS", "NEWS", "PRODUCT UPDATES", "RESOURCES", "CAREERS", "ABOUT", "CONTACT"],
+    links: ["ABOUT", "TESTING & CALIBRATION", "RESEARCH", "INSIGHTS", "CAREERS", "CONTACT"],
   },
   {
     title: "SOCIAL",
-    links: ["LINKEDIN", "FACEBOOK", "INSTAGRAM", "YOUTUBE", "X"],
+    links: ["LINKEDIN", "YOUTUBE"],
   },
 ];
 
@@ -29,10 +29,10 @@ export function Footer() {
       <Container>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,380px)_1fr]">
           <div>
-            <span className="text-2xl font-medium tracking-tight text-fg">Bequant</span>
+            <span className="text-2xl font-medium tracking-tight text-fg">Aerobase</span>
             <p className="mt-6 max-w-xs text-[13.5px] leading-relaxed text-fg-muted">
-              Pioneering TCP optimization improving network speed, saving bandwidth and
-              reducing congestion.
+              Physics-based AI for materials and manufacturing — computed and measured,
+              not assumed.
             </p>
           </div>
 
@@ -57,9 +57,10 @@ export function Footer() {
         <div className="mt-24 flex flex-col items-start justify-between gap-6 border-t border-white/[0.06] py-8 md:flex-row md:items-center">
           <LogoMark className="h-8 w-8 text-fg-muted" />
           <div className="flex flex-wrap items-center gap-6">
-            <a href="#" className="mono-label text-fg-muted hover:text-fg">DOCUMENTATION</a>
+            <a href="mailto:contact@aerobase.se" className="mono-label text-fg-muted hover:text-fg">CONTACT@AEROBASE.SE</a>
+            <a href="tel:+46704199023" className="mono-label text-fg-muted hover:text-fg">+46 70 4199 023</a>
             <a href="#" className="mono-label text-fg-muted hover:text-fg">PRIVACY &amp; COOKIE POLICY</a>
-            <MonoLabel className="!text-fg-dim">© 2026 BEQUANT</MonoLabel>
+            <MonoLabel className="!text-fg-dim">© 2026 AEROBASE INNOVATIONS AB</MonoLabel>
           </div>
         </div>
       </Container>

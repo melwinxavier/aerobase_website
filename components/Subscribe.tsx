@@ -5,10 +5,10 @@ import { ChevronsRight } from "lucide-react";
 import { Container, MonoLabel, Reveal } from "./ui/primitives";
 
 const UPDATES = [
-  { tag: "NEW RELEASE", date: "JULY 13, 2026", title: "Bequant releases R5.1.2, with fixes and improvements in functionality" },
-  { tag: "FEATURE", date: "JULY 6, 2026", title: "Bequant Releases R5.1.1, with applications flow speed information" },
-  { tag: "NEW RELEASE", date: "JUNE 26, 2026", title: "Bequant releases R5.0.4, with fixes and improvements in functionality" },
-  { tag: "NEW RELEASE", date: "JUNE 8, 2026", title: "Bequant releases R5.0.3, with fixes and improvements in functionality" },
+  { tag: "INSIGHT", date: "2026", title: "Accelerating materials innovation with generative foundation models" },
+  { tag: "PROJECT", date: "2026", title: "FlexCrash: developing crash-tolerant structures in green aluminium" },
+  { tag: "PROJECT", date: "2026", title: "ALABAMA: tailoring laser beams for additive manufacturing" },
+  { tag: "GUIDE", date: "2026", title: "How to calibrate material models against physical test data" },
 ];
 
 export function Subscribe() {
@@ -22,7 +22,7 @@ export function Subscribe() {
             <div>
               <MonoLabel>GET UPDATES</MonoLabel>
               <h3 className="mt-5 text-2xl font-light leading-snug text-fg">
-                Latest product updates and new features.
+                Latest research insights and product news.
               </h3>
               <MonoLabel className="mt-6 block !text-fg-dim">1-2 MONTHLY EMAILS</MonoLabel>
               <form
@@ -46,7 +46,7 @@ export function Subscribe() {
                 </button>
               </form>
               <p className="mt-4 text-xs leading-relaxed text-fg-dim">
-                Subscribe to receive emails from Bequant. Unsubscribe anytime.
+                Subscribe to receive emails from Aerobase. Unsubscribe anytime.
               </p>
             </div>
           </Reveal>
@@ -60,7 +60,7 @@ export function Subscribe() {
                   className="group grid grid-cols-1 items-center gap-4 border-t border-white/[0.06] py-6 md:grid-cols-[160px_1fr_auto]"
                 >
                   <div>
-                    <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">{u.tag}</MonoLabel>
+                    <MonoLabel dotColor="#F94300" className="!text-brand-red">{u.tag}</MonoLabel>
                     <MonoLabel className="mt-1 block !text-fg-dim">{u.date}</MonoLabel>
                   </div>
                   <p className="text-[15px] text-fg">{u.title}</p>

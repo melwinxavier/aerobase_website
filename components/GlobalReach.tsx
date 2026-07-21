@@ -36,12 +36,13 @@ export function GlobalReach() {
         <div className="border-white/[0.05] p-10 lg:border-r">
           <Reveal>
             <h3 className="text-2xl font-light leading-snug text-fg">
-              Bequant powers <span className="text-brand-red">600+</span> networks globally.
+              Built in the open, on{" "}
+              <span className="text-brand-red">8 EU &amp; Swedish projects</span>.
             </h3>
             <div className="my-10">
               <DottedMap />
             </div>
-            <PillButton variant="dark">CUSTOMERS</PillButton>
+            <PillButton variant="dark">RESEARCH</PillButton>
           </Reveal>
         </div>
 
@@ -58,7 +59,7 @@ export function GlobalReach() {
                   height: r,
                   left: -r / 2,
                   top: -r / 2,
-                  borderColor: i === 2 ? "rgba(255,45,45,0.35)" : "rgba(255,255,255,0.08)",
+                  borderColor: i === 2 ? "rgba(249,67,0,0.35)" : "rgba(255,255,255,0.08)",
                   borderStyle: i === 2 ? "dashed" : "solid",
                 }}
                 animate={{ opacity: [0.3, 0.7, 0.3] }}
@@ -73,13 +74,13 @@ export function GlobalReach() {
                 <span className="flex h-5 w-5 items-center justify-center rounded-full border border-brand-red/60">
                   <BadgeCheck className="h-3 w-3 text-brand-red" />
                 </span>
-                <MonoLabel className="!text-fg">5 MILLION SUBSCRIBERS POWERED</MonoLabel>
+                <MonoLabel className="!text-fg">8 EU &amp; SWEDISH-FUNDED PROJECTS</MonoLabel>
               </div>
               <h2 className="display max-w-lg text-[clamp(2rem,4.5vw,3.4rem)] text-fg">
-                Ready to improve your network quality?
+                Send us a grade and a cooling path. We&apos;ll send back a benchmarked prediction.
               </h2>
               <div className="mt-10">
-                <PillButton variant="green">REQUEST FREE TRIAL</PillButton>
+                <PillButton variant="green">START A PROJECT</PillButton>
               </div>
             </Reveal>
           </div>

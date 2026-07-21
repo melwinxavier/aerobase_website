@@ -7,18 +7,18 @@ import { ChapterMarker } from "./ChapterMarker";
 
 const FEATURES = [
   {
-    title: "Based on DPI Application",
-    desc: "Identify apps like video streaming and software updates with DPI, and shape them to avoid bandwidth bursts during peak hours.",
+    title: "Plan, make & test",
+    desc: "We design the test matrix, machine the specimens, and run the campaign — tension, shear and biaxial — at partner facilities.",
   },
   {
-    title: "Based on Network Topology",
-    desc: "Apply shaping to congested Access Points or OLT Ports, to ensure they do not reach congestion and support more users.",
+    title: "Calibrate, validate & deploy",
+    desc: "Neural-network and genetic-algorithm optimization calibrate and validate the model, then it ships as a ready-to-use material card.",
   },
 ];
 
 const BENEFITS = [
-  "Increase subscribers without additional network investments",
-  "Reduce upstream internet & backhaul capacity costs",
+  "Models delivered as ready-to-use material cards",
+  "Validated against physical tests, not just fit",
 ];
 
 function Counter({ target, label }: { target: number; label: string }) {
@@ -44,19 +44,19 @@ function Counter({ target, label }: { target: number; label: string }) {
 export function MaximizeCapacity() {
   return (
     <section className="relative border-t border-white/[0.05] py-20 md:py-28">
-      <ChapterMarker index="2.0" title="Maximize Network Capacity" color="#e8b23d" />
+      <ChapterMarker index="2.0" title="How We Work" color="#e8b23d" />
 
       <Container className="md:pl-[280px]">
         <Reveal>
           <MonoLabel dotColor="#e8b23d" className="!text-brand-gold">
-            MAXIMIZE NETWORK CAPACITY
+            HOW WE WORK
           </MonoLabel>
           <h2 className="mt-6 display max-w-2xl text-[clamp(1.9rem,4vw,3rem)] text-fg">
-            More network capacity with smart shaping.
+            Plan. Test. Calibrate. Deploy.
           </h2>
           <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-fg-muted">
-            Support more users per Access Point, or OLT port, without degrading your
-            subscribers&apos; Quality of Experience, with these smart shaping features.
+            A material model is only as good as the path that made it. Ours is the same
+            every time — computed first, then measured.
           </p>
         </Reveal>
 
@@ -94,12 +94,12 @@ export function MaximizeCapacity() {
         {/* Stats */}
         <Reveal>
           <p className="mt-24 max-w-md text-[clamp(1.4rem,2.6vw,2rem)] font-light leading-tight text-fg">
-            More subscribers per Access Point and OLT Port.
+            The result: predictions that beat the legacy baseline.
           </p>
         </Reveal>
         <div className="mt-14 flex flex-wrap gap-x-24 gap-y-10">
-          <Counter target={7} label="MORE USERS PER AP" />
-          <Counter target={7} label="MORE USERS PER OLT PORT" />
+          <Counter target={18} label="LEGACY MODEL ERROR" />
+          <Counter target={5} label="SAFELIGHT MODEL ERROR" />
         </div>
 
         {/* CTA band */}
@@ -114,11 +114,11 @@ export function MaximizeCapacity() {
               />
             </svg>
             <div className="relative">
-              <p className="text-xl font-normal text-fg">Maximize your network capacity.</p>
-              <p className="text-xl font-light text-fg-muted">Start today.</p>
+              <p className="text-xl font-normal text-fg">Send us a grade and a cooling path.</p>
+              <p className="text-xl font-light text-fg-muted">Get a benchmarked prediction.</p>
             </div>
             <div className="relative flex gap-3">
-              <PillButton variant="dark">TRY NOW</PillButton>
+              <PillButton variant="dark">TRY PHASES</PillButton>
               <PillButton variant="gold">CONTACT</PillButton>
             </div>
           </div>

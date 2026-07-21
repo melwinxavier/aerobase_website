@@ -6,18 +6,18 @@ import { LogoMark } from "./Logo";
 
 const NEWS = [
   {
-    date: "MAY 28, 2026",
-    title: "Bequant Partners with Winncom Technologies to Accelerate Expansion Across North America",
+    date: "JUNE 2026",
+    title: "Aerobase joins GENMAT — Europe’s first multi-scale materials foundation model (Horizon Europe 101295332)",
     accent: "from-[#2a2f3a] to-[#141518]",
   },
   {
-    date: "APRIL 16, 2026",
-    title: "Bequant to Attend ABRINT 2026",
+    date: "2026",
+    title: "Phases Copilot enters early access — an AI assistant for setting up and interpreting phase-transformation models",
     accent: "from-[#20231a] to-[#141518]",
   },
   {
-    date: "APRIL 2, 2026",
-    title: "Bequant Takes Full Commercial Responsibility for the Cambium QoE Solution",
+    date: "2026",
+    title: "SafeLight predicts mega-cast crash failure to 3–5% on a customer program",
     accent: "from-[#3a1f18] to-[#141518]",
   },
 ];
@@ -44,7 +44,7 @@ export function Announcements() {
                 className="group grid grid-cols-1 items-center gap-6 border-t border-white/[0.06] py-8 md:grid-cols-[120px_260px_1fr_auto]"
               >
                 <div>
-                  <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">NEWS</MonoLabel>
+                  <MonoLabel dotColor="#F94300" className="!text-brand-red">NEWS</MonoLabel>
                   <MonoLabel className="mt-1 block !text-fg-dim">{n.date}</MonoLabel>
                 </div>
                 <div className={`grid h-28 place-items-center rounded-xl bg-gradient-to-br ${n.accent}`}>

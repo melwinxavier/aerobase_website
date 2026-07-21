@@ -57,37 +57,37 @@ function Queues() {
 }
 
 const BENEFITS = [
-  "Reduce support calls & truck rolls",
-  "Reduce customer churn",
-  "Gain new customers",
-  "Cut costs with centralized management",
+  "Extrapolate beyond any single dataset",
+  "Uncertainty you can act on",
+  "Characterized, not assumed",
+  "Runs inside the solvers you already use",
 ];
 
 export function EnhanceQoE() {
   return (
     <section className="relative border-t border-white/[0.05] py-20 md:py-28">
-      <ChapterMarker index="1.0" title="Enhance Subscriber QoE" color="#ff2d2d" />
+      <ChapterMarker index="1.0" title="The Approach" color="#F94300" />
 
       <Container className="md:pl-[280px]">
         <Reveal>
-          <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">
-            ENHANCE SUBSCRIBER QOE
+          <MonoLabel dotColor="#F94300" className="!text-brand-red">
+            THE APPROACH
           </MonoLabel>
           <h2 className="mt-6 display max-w-2xl text-[clamp(1.9rem,4vw,3rem)] text-fg">
-            Higher speed, lower latency and less packet loss.
+            Physics first. ML second. Calibrated on real data.
           </h2>
           <p className="mt-6 max-w-md text-[15px] leading-relaxed text-fg-muted">
-            Powerful features to significantly enhance your subscribers&apos; Quality of
-            Experience.
+            Where most tools guess a material&apos;s behavior from a dataset, Aerobase
+            computes it from thermodynamics and validates it against measured data.
           </p>
         </Reveal>
 
         <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-2">
           <Reveal>
             <FeatureCard
-              bracket="[TCPO]"
-              title="TCP Optimization"
-              desc="Faster downloads and uploads."
+              bracket="[01]"
+              title="Compute the physics"
+              desc="CALPHAD thermodynamics plus mechanics extrapolate a material's behavior beyond any single dataset."
             >
               <div className="flex items-center justify-center gap-3 rounded-xl border border-white/[0.06] bg-black/40 py-8">
                 <div className="grid h-11 w-11 place-items-center rounded-full bg-brand-red/15">
@@ -104,15 +104,15 @@ export function EnhanceQoE() {
                   ))}
                 </div>
               </div>
-              <MonoLabel className="mt-4 block text-center !text-fg-dim">BQN SOFTWARE</MonoLabel>
+              <MonoLabel className="mt-4 block text-center !text-fg-dim">PHASES ENGINE</MonoLabel>
             </FeatureCard>
           </Reveal>
 
           <Reveal delay={0.05}>
             <FeatureCard
-              bracket="[AQM]"
-              title="Active Queue Management"
-              desc="Enforce rate plans with the most advanced queueing technology, to lower latency and packet loss at full load."
+              bracket="[02]"
+              title="Learn the residual"
+              desc="Machine learning corrects what first principles can't, and reports its own uncertainty alongside every prediction."
             >
               <Queues />
             </FeatureCard>
@@ -120,15 +120,15 @@ export function EnhanceQoE() {
 
           <Reveal>
             <FeatureCard
-              bracket="[ACM]"
-              title="Automatic Congestion Management"
-              desc="Real-time machine learning to achieve lower latency and packet loss, even when running below the rate plan limit."
+              bracket="[03]"
+              title="Calibrate on real data"
+              desc="Test campaigns run at partner facilities — RISE, Swerim and LTU. Characterized, not assumed."
             >
               <svg viewBox="0 0 320 60" className="h-14 w-full">
                 <polyline
                   points="0,45 25,20 45,50 70,15 95,48 120,25 145,55 170,10 195,40 220,30 245,52 270,18 300,44 320,30"
                   fill="none"
-                  stroke="#ff2d2d"
+                  stroke="#F94300"
                   strokeWidth="1.5"
                 />
               </svg>
@@ -138,8 +138,8 @@ export function EnhanceQoE() {
           <Reveal delay={0.05}>
             <FeatureCard
               bracket=""
-              title="DPI/App-based Prioritization"
-              desc="DPI to detect applications, like speed tests and teleconferences, to prioritize them and guarantee the best quality of service."
+              title="Solver-ready cards"
+              desc="Export a drop-in material card for the solver you already run — LS-DYNA, Abaqus, Radioss, Simufact, DEFORM, ANSYS or COMSOL."
             >
               <div className="flex gap-1.5">
                 {Array.from({ length: 6 }).map((_, i) => (

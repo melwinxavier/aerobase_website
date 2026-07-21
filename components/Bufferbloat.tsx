@@ -23,10 +23,10 @@ function Gauge({
           : "#141518",
       }}
     >
-      <MonoLabel>ACM + TCPO</MonoLabel>
+      <MonoLabel>{good ? "SAFELIGHT MODEL" : "LEGACY MODEL"}</MonoLabel>
       <div className="mt-6 grid grid-cols-2 gap-8">
         <div>
-          <MonoLabel className="!text-fg-dim">BUFFERBLOAT GRADE</MonoLabel>
+          <MonoLabel className="!text-fg-dim">CRASH PREDICTION</MonoLabel>
           <div className="mt-6 grid place-items-center">
             <div className="relative grid h-28 w-28 place-items-center">
               <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full -rotate-90">
@@ -50,18 +50,18 @@ function Gauge({
           </div>
         </div>
         <div>
-          <MonoLabel className="!text-fg-dim">LATENCY</MonoLabel>
+          <MonoLabel className="!text-fg-dim">ERROR BY LOAD CASE</MonoLabel>
           <ul className="mt-6 space-y-4">
             {[
-              ["UNLOADED", latency[0]],
-              ["DOWNLOAD ACTIVE", latency[1]],
-              ["UPLOAD ACTIVE", latency[2]],
+              ["TENSION", latency[0]],
+              ["SHEAR", latency[1]],
+              ["BIAXIAL", latency[2]],
             ].map(([label, val]) => (
               <li key={label} className="flex items-baseline justify-between border-b border-white/[0.06] pb-2">
                 <MonoLabel className="!text-fg-dim">{label}</MonoLabel>
                 <span className="text-2xl font-light text-fg">
                   {val}
-                  <span className="ml-1 text-xs text-fg-dim">MS</span>
+                  <span className="ml-1 text-xs text-fg-dim">%</span>
                 </span>
               </li>
             ))}
@@ -78,21 +78,21 @@ export function Bufferbloat() {
       <Container className="md:pl-[280px]">
         <Reveal>
           <h2 className="display max-w-2xl text-[clamp(1.9rem,4vw,3rem)] text-fg">
-            Transform your bufferbloat network grade.
+            Beat the legacy crash-failure baseline.
           </h2>
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-fg-muted">
-            If your customers use the popular Waveform bufferbloat test, which assigns a
-            grade to your quality in terms of bufferbloat and its suitability for gaming,
-            the Bequant QoE will provide a significant boost in the grade of your network.
+            On high-pressure die-cast (mega-cast) aluminium, legacy failure models like
+            GISSMO and CrachFEM predict crash behavior to within 12–18% of full-vehicle
+            tests. SafeLight, calibrated on real data, brings that error down to 3–5%.
           </p>
         </Reveal>
 
         <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-2">
           <Reveal>
-            <Gauge grade="B" latency={["25", "180", "210"]} />
+            <Gauge grade="C" latency={["14", "16", "18"]} />
           </Reveal>
           <Reveal delay={0.08}>
-            <Gauge grade="A+" good latency={["5", "12", "14"]} />
+            <Gauge grade="A+" good latency={["3", "4", "5"]} />
           </Reveal>
         </div>
       </Container>
