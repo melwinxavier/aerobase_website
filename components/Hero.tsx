@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { BadgeCheck } from "lucide-react";
 import { Container } from "./ui/primitives";
+import { HeroWaveBackground } from "./HeroWaveBackground";
 
 const rise = (i: number) => ({
   initial: { opacity: 0, y: 40 },
@@ -17,36 +18,12 @@ const rise = (i: number) => ({
 export function Hero() {
   return (
     <section id="top" className="relative h-[100svh] min-h-[720px] w-full overflow-hidden">
-      {/* Cinematic streaks background */}
-      <div className="absolute inset-0 hero-streaks" />
-      <div className="absolute inset-0 streak-rays animate-streak" />
-      {/* speed light lines */}
+      {/* Flowing silk-ribbon wave background (WebGL) */}
       <div className="pointer-events-none absolute inset-0">
-        {Array.from({ length: 14 }).map((_, i) => {
-          const angle = -30 + i * (60 / 13);
-          return (
-            <motion.span
-              key={i}
-              className="absolute left-1/2 top-[60%] h-[2px] origin-left"
-              style={{
-                width: "70vw",
-                rotate: `${angle}deg`,
-                background:
-                  "linear-gradient(90deg, rgba(255,150,80,0) 0%, rgba(255,120,50,0.5) 60%, rgba(255,200,120,0.9) 100%)",
-              }}
-              initial={{ scaleX: 0.2, opacity: 0 }}
-              animate={{ scaleX: [0.2, 1], opacity: [0, 0.8, 0.5] }}
-              transition={{
-                duration: 3.5 + (i % 5),
-                delay: i * 0.15,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-              }}
-            />
-          );
-        })}
+        <HeroWaveBackground className="h-full w-full" />
       </div>
+      {/* readability scrim behind the headline (dark left, clear right where the wave sweeps) */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(75%_65%_at_30%_58%,rgba(8,8,10,0.82),transparent_70%)]" />
       {/* vignette + bottom fade into page */}
       <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_40%,transparent_35%,rgba(10,7,8,0.85)_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-b from-transparent to-ink" />
