@@ -5,6 +5,53 @@
 :root {
   --font-sans: "Inter", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+
+  /* ── Default theme: original dark ── */
+  --ink: #121214;
+  --ink-900: #0d0d0f;
+  --ink-800: #161618;
+  --ink-700: #1c1c1f;
+  --ink-600: #232327;
+  --ink-card: #161719;
+  --line: rgba(255, 255, 255, 0.08);
+  --fg: #efefef;
+  --fg-muted: #8a8a8f;
+  --fg-dim: #5c5c61;
+  --brand-red: #ff2d2d;
+  --brand-green: #00bf2a;
+  --brand-gold: #e8b23d;
+  --brand-blue: #4d8bff;
+  /* hero readability overlays (dark by default) */
+  --hero-scrim: rgba(8, 8, 10, 0.82);
+  --hero-vignette: rgba(10, 7, 8, 0.85);
+}
+
+/* ── Apple theme: clean white / light-gray system ── */
+:root[data-theme="apple"] {
+  --ink: #ffffff;
+  --ink-900: #f5f5f7;
+  --ink-800: #fbfbfd;
+  --ink-700: #f0f0f2;
+  --ink-600: #e8e8ed;
+  --ink-card: #f5f5f7;
+  --line: rgba(0, 0, 0, 0.1);
+  --fg: #1d1d1f;
+  --fg-muted: #6e6e73;
+  --fg-dim: #86868b;
+  --brand-red: #ff3b30;
+  --brand-green: #0071e3; /* Apple accent blue drives the primary buttons */
+  --brand-gold: #ff9f0a;
+  --brand-blue: #0071e3;
+  /* light scrims so dark hero text stays readable on white */
+  --hero-scrim: rgba(255, 255, 255, 0.72);
+  --hero-vignette: rgba(255, 255, 255, 0.9);
+}
+
+.hero-scrim {
+  background: radial-gradient(75% 65% at 30% 58%, var(--hero-scrim), transparent 70%);
+}
+.hero-vignette {
+  background: radial-gradient(120% 120% at 50% 40%, transparent 35%, var(--hero-vignette) 100%);
 }
 
 * {
@@ -17,10 +64,11 @@ html {
 }
 
 body {
-  background-color: #121214;
-  color: #efefef;
+  background-color: var(--ink);
+  color: var(--fg);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* Custom scrollbar */

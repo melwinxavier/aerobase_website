@@ -105,7 +105,7 @@ export function MaximizeCapacity() {
         {/* CTA band */}
         <Reveal>
           <div className="relative mt-24 flex flex-col items-start justify-between gap-6 overflow-hidden rounded-2xl border border-brand-gold/20 p-8 md:flex-row md:items-center"
-            style={{ background: "radial-gradient(120% 160% at 50% 50%, rgba(232,178,61,0.10), transparent 60%), #121214" }}
+            style={{ background: "radial-gradient(120% 160% at 50% 50%, rgba(232,178,61,0.10), transparent 60%), var(--ink)" }}
           >
             <svg viewBox="0 0 800 60" className="pointer-events-none absolute inset-0 h-full w-full opacity-40">
               <polyline

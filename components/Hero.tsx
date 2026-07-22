@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { BadgeCheck } from "lucide-react";
 import { Container } from "./ui/primitives";
-import { HeroWaveBackground } from "./HeroWaveBackground";
+import { ParticleHero } from "./ParticleHero";
 
 const rise = (i: number) => ({
   initial: { opacity: 0, y: 40 },
@@ -18,14 +18,14 @@ const rise = (i: number) => ({
 export function Hero() {
   return (
     <section id="top" className="relative h-[100svh] min-h-[720px] w-full overflow-hidden">
-      {/* Flowing silk-ribbon wave background (WebGL) */}
+      {/* Generative airfoil point cloud that morphs to a shell on scroll */}
       <div className="pointer-events-none absolute inset-0">
-        <HeroWaveBackground className="h-full w-full" />
+        <ParticleHero className="h-full w-full opacity-90" />
       </div>
-      {/* readability scrim behind the headline (dark left, clear right where the wave sweeps) */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(75%_65%_at_30%_58%,rgba(8,8,10,0.82),transparent_70%)]" />
+      {/* readability scrim behind the headline (adapts to theme) */}
+      <div className="hero-scrim pointer-events-none absolute inset-0" />
       {/* vignette + bottom fade into page */}
-      <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_40%,transparent_35%,rgba(10,7,8,0.85)_100%)]" />
+      <div className="hero-vignette absolute inset-0" />
       <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-b from-transparent to-ink" />
 
       <Container className="relative z-10 flex h-full flex-col justify-center">

@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { NewsOverlay } from "@/components/NewsOverlay";
 import { BentoGrid } from "@/components/BentoGrid";
 import { EnhanceQoE } from "@/components/EnhanceQoE";
 import { TestimonialReveal } from "@/components/TestimonialReveal";
@@ -14,13 +13,13 @@ import { Subscribe } from "@/components/Subscribe";
 import { GlobalReach } from "@/components/GlobalReach";
 import { Footer } from "@/components/Footer";
 import { CookieConsent } from "@/components/CookieConsent";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
     <main className="relative bg-ink">
       <Navbar />
       <Hero />
-      <NewsOverlay />
       <BentoGrid />
 
       <EnhanceQoE />
@@ -62,6 +61,7 @@ export default function Home() {
       <Footer />
 
       <CookieConsent />
+      <ThemeToggle />
     </main>
   );
 }

@@ -9,24 +9,24 @@ const config: Config = {
     extend: {
       colors: {
         ink: {
-          DEFAULT: "#121214", // page background
-          900: "#0d0d0f",
-          800: "#161618",
-          700: "#1c1c1f",
-          600: "#232327",
-          card: "#161719",
+          DEFAULT: "var(--ink)", // page background
+          900: "var(--ink-900)",
+          800: "var(--ink-800)",
+          700: "var(--ink-700)",
+          600: "var(--ink-600)",
+          card: "var(--ink-card)",
         },
-        line: "rgba(255,255,255,0.08)",
+        line: "var(--line)",
         fg: {
-          DEFAULT: "#efefef",
-          muted: "#8a8a8f",
-          dim: "#5c5c61",
+          DEFAULT: "var(--fg)",
+          muted: "var(--fg-muted)",
+          dim: "var(--fg-dim)",
         },
         brand: {
-          red: "#ff2d2d",
-          green: "#00bf2a",
-          gold: "#e8b23d",
-          blue: "#4d8bff",
+          red: "var(--brand-red)",
+          green: "var(--brand-green)",
+          gold: "var(--brand-gold)",
+          blue: "var(--brand-blue)",
         },
       },
       fontFamily: {
