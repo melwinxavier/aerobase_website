@@ -50,8 +50,8 @@ export function Hero() {
             {...rise(3)}
             className="mt-7 max-w-md text-[15px] leading-relaxed text-fg-muted"
           >
-            Aerobase builds physics-based AI for materials and manufacturing — digital
-            metallurgy, additive, and crash — grounded in real experiments, not guesses.
+            Aerobase builds physics-based AI for materials and manufacturing. Digital
+            metallurgy, additive, and crash, grounded in real experiments.
           </motion.p>
         </div>
       </Container>

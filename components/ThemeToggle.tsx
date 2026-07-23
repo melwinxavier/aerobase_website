@@ -1,17 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Palette } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 type Theme = "dark" | "apple";
 
-const LABELS: Record<Theme, string> = {
-  dark: "ORIGINAL",
-  apple: "APPLE LIGHT",
-};
-
-export function ThemeToggle() {
+export function ThemeToggle({ className }: { className?: string }) {
   const [theme, setTheme] = useState<Theme>("dark");
 
   // Sync with whatever the pre-paint script already set on <html>.
@@ -34,21 +29,19 @@ export function ThemeToggle() {
     } catch {}
   };
 
+  const isDark = theme === "dark";
+
   return (
     <button
       onClick={toggle}
-      aria-label={`Switch theme (current: ${LABELS[theme]})`}
+      aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
       className={cn(
-        "mono-label fixed bottom-5 right-5 z-[60] inline-flex items-center gap-2",
-        "rounded-full border border-brand-green/60 bg-ink-800/80 px-4 py-3",
-        "text-brand-green shadow-lg backdrop-blur-md transition-colors",
-        "hover:bg-brand-green/15"
+        "inline-flex items-center justify-center rounded-md p-2",
+        "text-fg-muted transition-colors hover:bg-white/[0.06] hover:text-fg",
+        className
       )}
     >
-      <Palette className="h-4 w-4" />
-      <span>
-        THEME: <span className="text-fg">{LABELS[theme]}</span>
-      </span>
+      {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
     </button>
   );
 }

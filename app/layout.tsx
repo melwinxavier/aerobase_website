@@ -19,7 +19,7 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Aerobase – AI agents that know the physics",
   description:
-    "Aerobase builds physics-based AI for materials and manufacturing — digital metallurgy, additive, and crash — grounded in real experiments, not guesses.",
+    "Aerobase builds physics-based AI for materials and manufacturing. Digital metallurgy, additive, and crash, grounded in real experiments.",
 };
 
 export default function RootLayout({

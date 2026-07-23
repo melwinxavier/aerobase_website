@@ -12,8 +12,6 @@ import { Announcements } from "@/components/Announcements";
 import { Subscribe } from "@/components/Subscribe";
 import { GlobalReach } from "@/components/GlobalReach";
 import { Footer } from "@/components/Footer";
-import { CookieConsent } from "@/components/CookieConsent";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -59,9 +57,6 @@ export default function Home() {
       <Subscribe />
       <GlobalReach />
       <Footer />
-
-      <CookieConsent />
-      <ThemeToggle />
     </main>
   );
 }
