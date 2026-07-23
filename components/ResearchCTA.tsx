@@ -42,7 +42,7 @@ export function ResearchCTA() {
             <div className="my-10">
               <DottedMap />
             </div>
-            <PillButton variant="dark">RESEARCH</PillButton>
+            <PillButton variant="dark" href="/research">RESEARCH</PillButton>
           </Reveal>
         </div>
 
@@ -80,7 +80,7 @@ export function ResearchCTA() {
                 Send us a grade and a cooling path. We&apos;ll send back a benchmarked prediction.
               </h2>
               <div className="mt-10">
-                <PillButton variant="green">START A PROJECT</PillButton>
+                <PillButton variant="green" href="/contact">START A PROJECT</PillButton>
               </div>
             </Reveal>
           </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { Inter, IBM_Plex_Mono, Archivo } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,6 +16,15 @@ const mono = IBM_Plex_Mono({
   display: "swap",
 });
 
+// Black-weight neo-grotesque for the editorial product pages (the_unseen_hook
+// display treatment). Loaded site-wide but only used via .u-display / font-display.
+const archivo = Archivo({
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800", "900"],
+  variable: "--font-archivo",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Aerobase – AI agents that know the physics",
   description:
@@ -28,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${mono.variable} ${archivo.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{

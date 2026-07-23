@@ -51,7 +51,7 @@ export function Announcements() {
                   <LogoMark className="h-6 w-6 text-white/60" />
                 </div>
                 <p className="max-w-md text-[17px] leading-snug text-fg">{n.title}</p>
-                <PillButton variant="dark" className="justify-self-start md:justify-self-end">READ</PillButton>
+                <PillButton variant="dark" href="/research" className="justify-self-start md:justify-self-end">READ</PillButton>
               </div>
             </Reveal>
           ))}

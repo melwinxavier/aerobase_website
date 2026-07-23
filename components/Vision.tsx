@@ -23,7 +23,7 @@ export function Vision() {
               <MonoLabel dotColor="#ff2d2d" className="!text-brand-red">THE BIGGER VISION</MonoLabel>
               <div className="flex items-end justify-between">
                 <span className="text-2xl font-light text-fg">About Aerobase</span>
-                <PillButton variant="dark">READ</PillButton>
+                <PillButton variant="dark" href="/about">READ</PillButton>
               </div>
             </article>
           </Reveal>

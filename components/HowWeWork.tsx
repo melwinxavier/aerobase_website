@@ -118,8 +118,8 @@ export function HowWeWork() {
               <p className="text-xl font-light text-fg-muted">Get a benchmarked prediction.</p>
             </div>
             <div className="relative flex gap-3">
-              <PillButton variant="dark">TRY PHASES</PillButton>
-              <PillButton variant="gold">CONTACT</PillButton>
+              <PillButton variant="dark" href="https://phases.aerobase.se">TRY PHASES</PillButton>
+              <PillButton variant="gold" href="/contact">CONTACT</PillButton>
             </div>
           </div>
         </Reveal>

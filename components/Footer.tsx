@@ -1,25 +1,36 @@
 "use client";
 
+import Link from "next/link";
 import { Container, MonoLabel } from "./ui/primitives";
 import { LogoMark } from "./Logo";
 
-const COLS: { title: string; links: string[] }[] = [
+type FooterLink = { label: string; href: string; external?: boolean };
+
+const COLS: { title: string; links: FooterLink[] }[] = [
   {
     title: "PRODUCTS",
     links: [
-      "PHASES",
-      "SAFELIGHT",
-      "AEROCRAFT",
-      "CALIBER",
+      { label: "PHASES", href: "/ai-agents/phases" },
+      { label: "SAFELIGHT", href: "/material-models" },
+      { label: "AEROCRAFT", href: "/ai-agents/aerocraft" },
+      { label: "MATERIAL MODELS", href: "/material-models" },
     ],
   },
   {
     title: "GENERAL",
-    links: ["ABOUT", "TESTING & CALIBRATION", "RESEARCH", "INSIGHTS", "CAREERS", "CONTACT"],
+    links: [
+      { label: "ABOUT", href: "/about" },
+      { label: "HOW WE WORK", href: "/how-we-work" },
+      { label: "RESEARCH", href: "/research" },
+      { label: "CONTACT", href: "/contact" },
+    ],
   },
   {
     title: "SOCIAL",
-    links: ["LINKEDIN", "YOUTUBE"],
+    links: [
+      { label: "LINKEDIN", href: "https://www.linkedin.com/company/aerobase-innovations", external: true },
+      { label: "YOUTUBE", href: "https://www.youtube.com/@aerobase", external: true },
+    ],
   },
 ];
 
@@ -41,13 +52,29 @@ export function Footer() {
               <div key={c.title}>
                 <MonoLabel className="!text-fg-dim">{c.title}</MonoLabel>
                 <ul className="mt-6 space-y-3">
-                  {c.links.map((l) => (
-                    <li key={l}>
-                      <a href="#" className="mono-label text-fg-muted transition-colors hover:text-fg">
-                        {l}
-                      </a>
-                    </li>
-                  ))}
+                  {c.links.map((l) =>
+                    l.external ? (
+                      <li key={l.label}>
+                        <a
+                          href={l.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mono-label text-fg-muted transition-colors hover:text-fg"
+                        >
+                          {l.label}
+                        </a>
+                      </li>
+                    ) : (
+                      <li key={l.label}>
+                        <Link
+                          href={l.href}
+                          className="mono-label text-fg-muted transition-colors hover:text-fg"
+                        >
+                          {l.label}
+                        </Link>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             ))}

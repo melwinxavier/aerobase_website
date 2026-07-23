@@ -1,28 +1,29 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronsRight, Menu, X } from "lucide-react";
 import { Wordmark } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/cn";
 
-// Primary nav per design/04_sitemap.md. "Testing" abbreviates
-// "Testing & Calibration" (as the homepage wireframe does) to fit the pill.
-// hrefs are placeholders until the inner pages/routes exist.
+// Primary nav — based on the design/options/03_atlas layout, with How We Work
+// kept in the footer only: AI Agents · Material Models · Research · About.
 const NAV = [
-  { label: "AI Agents", href: "#" },
-  { label: "Material Models", href: "#" },
-  { label: "Testing", href: "#" },
-  { label: "How We Work", href: "#" },
-  { label: "Research", href: "#" },
-  { label: "Insights", href: "#" },
-  { label: "About", href: "#" },
+  { label: "AI Agents", href: "/ai-agents" },
+  { label: "Material Models", href: "/material-models" },
+  { label: "Research", href: "/research" },
+  { label: "About", href: "/about" },
 ];
+
+const PHASES_URL = "https://phases.aerobase.se";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -30,6 +31,14 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Close the mobile menu whenever the route changes.
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  const isActive = (href: string) =>
+    pathname === href || (href !== "/" && pathname.startsWith(href));
 
   return (
     <motion.header
@@ -42,21 +51,25 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-[64px] max-w-container items-center justify-between px-6 md:px-10">
-        <a href="#top" aria-label="Aerobase home">
+        <Link href="/" aria-label="Aerobase home">
           <Wordmark />
-        </a>
+        </Link>
 
         {/* Center pill nav */}
         <nav className="absolute left-1/2 hidden -translate-x-1/2 lg:block">
           <ul className="flex items-center gap-0.5 rounded-lg bg-white/[0.04] px-1.5 py-1.5 backdrop-blur-sm">
             {NAV.map((item) => (
               <li key={item.label}>
-                <a
+                <Link
                   href={item.href}
-                  className="mono-label rounded-md px-3 py-2 text-fg-muted transition-colors hover:bg-white/[0.06] hover:text-fg"
+                  aria-current={isActive(item.href) ? "page" : undefined}
+                  className={cn(
+                    "mono-label rounded-md px-3 py-2 transition-colors hover:bg-white/[0.06] hover:text-fg",
+                    isActive(item.href) ? "bg-white/[0.06] text-fg" : "text-fg-muted"
+                  )}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -65,7 +78,9 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <a
-            href="#"
+            href={PHASES_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mono-label group hidden items-center gap-2 rounded-md border border-brand-green/70 bg-brand-green/10 px-3.5 py-2.5 text-brand-green transition-colors hover:bg-brand-green/20 sm:inline-flex"
           >
             TRY PHASES
@@ -100,18 +115,24 @@ export function Navbar() {
             <ul className="mx-auto max-w-container space-y-1 px-6 py-4">
               {NAV.map((item) => (
                 <li key={item.label}>
-                  <a
+                  <Link
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="mono-label block rounded-md px-3 py-3 text-fg-muted transition-colors hover:bg-white/[0.06] hover:text-fg"
+                    aria-current={isActive(item.href) ? "page" : undefined}
+                    className={cn(
+                      "mono-label block rounded-md px-3 py-3 transition-colors hover:bg-white/[0.06] hover:text-fg",
+                      isActive(item.href) ? "bg-white/[0.06] text-fg" : "text-fg-muted"
+                    )}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li className="pt-2">
                 <a
-                  href="#"
+                  href={PHASES_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
                   className="mono-label group inline-flex w-full items-center justify-center gap-2 rounded-md border border-brand-green/70 bg-brand-green/10 px-3.5 py-3 text-brand-green transition-colors hover:bg-brand-green/20"
                 >

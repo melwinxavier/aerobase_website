@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ChevronsRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/cn";
@@ -50,10 +51,31 @@ export function PillButton({
     gold: "border border-brand-gold/60 bg-brand-gold/10 text-brand-gold hover:bg-brand-gold/20",
     ghost: "text-fg-muted hover:text-fg",
   };
-  return (
-    <a href={href} className={cn(base, variants[variant], className)}>
+  const cls = cn(base, variants[variant], className);
+  const inner = (
+    <>
       <span>{children}</span>
       <ChevronsRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
+    </>
+  );
+
+  // Internal routes get client-side navigation; external URLs and #anchors use <a>.
+  const isInternal = href.startsWith("/");
+  if (isInternal) {
+    return (
+      <Link href={href} className={cls}>
+        {inner}
+      </Link>
+    );
+  }
+  const external = href.startsWith("http");
+  return (
+    <a
+      href={href}
+      className={cls}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+    >
+      {inner}
     </a>
   );
 }
