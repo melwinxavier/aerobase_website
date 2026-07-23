@@ -63,7 +63,7 @@ const BENEFITS = [
   "Runs inside the solvers you already use",
 ];
 
-export function EnhanceQoE() {
+export function WhatWeDo() {
   return (
     <section className="relative border-t border-white/[0.05] py-20 md:py-28">
       <ChapterMarker index="1.0" title="The Approach" color="#ff2d2d" />

@@ -7,7 +7,7 @@ const LOGOS = [
   "GKN", "Ansys", "Fraunhofer", "SINTEF", "Gestamp", "NVIDIA", "Vinnova",
 ];
 
-export function LogoStrip() {
+export function TrustStrip() {
   return (
     <section className="py-16">
       <Container>

@@ -1,16 +1,16 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { BentoGrid } from "@/components/BentoGrid";
-import { EnhanceQoE } from "@/components/EnhanceQoE";
+import { WhatWeDo } from "@/components/WhatWeDo";
 import { TestimonialReveal } from "@/components/TestimonialReveal";
-import { Bufferbloat } from "@/components/Bufferbloat";
-import { LogoStrip } from "@/components/LogoStrip";
-import { MaximizeCapacity } from "@/components/MaximizeCapacity";
-import { Analytics } from "@/components/Analytics";
+import { SafeLight } from "@/components/SafeLight";
+import { TrustStrip } from "@/components/TrustStrip";
+import { HowWeWork } from "@/components/HowWeWork";
+import { Phases } from "@/components/Phases";
 import { Vision } from "@/components/Vision";
 import { Announcements } from "@/components/Announcements";
 import { Subscribe } from "@/components/Subscribe";
-import { GlobalReach } from "@/components/GlobalReach";
+import { ResearchCTA } from "@/components/ResearchCTA";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <Hero />
       <BentoGrid />
 
-      <EnhanceQoE />
+      <WhatWeDo />
       <TestimonialReveal
         quote="Data accelerated research is hastening the model development process. Industry all over stands to gain from this if ever the tools are utilized imaginatively."
         highlightWords={["Data", "accelerated", "research", "hastening", "the", "model", "development", "process."]}
@@ -29,7 +29,7 @@ export default function Home() {
         company="AEROBASE"
         country="SWEDEN"
       />
-      <Bufferbloat />
+      <SafeLight />
       <TestimonialReveal
         quote="Where most tools guess a material's behavior from a dataset, we compute it from thermodynamics and validate it against measured data. Computed and measured, not assumed."
         highlightWords={["compute", "it", "from", "thermodynamics", "Computed", "and", "measured,", "not", "assumed."]}
@@ -38,11 +38,11 @@ export default function Home() {
         company="AEROBASE"
         country="SWEDEN"
       />
-      <LogoStrip />
+      <TrustStrip />
 
-      <MaximizeCapacity />
+      <HowWeWork />
 
-      <Analytics />
+      <Phases />
       <TestimonialReveal
         quote="Every model is calibrated against physical tests run at partner facilities — RISE, Swerim and LTU. The behavior is characterized, not assumed."
         highlightWords={["calibrated", "against", "physical", "tests", "characterized,", "not", "assumed."]}
@@ -55,7 +55,7 @@ export default function Home() {
       <Vision />
       <Announcements />
       <Subscribe />
-      <GlobalReach />
+      <ResearchCTA />
       <Footer />
     </main>
   );

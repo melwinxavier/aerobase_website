@@ -41,7 +41,7 @@ function Counter({ target, label }: { target: number; label: string }) {
   );
 }
 
-export function MaximizeCapacity() {
+export function HowWeWork() {
   return (
     <section className="relative border-t border-white/[0.05] py-20 md:py-28">
       <ChapterMarker index="2.0" title="How We Work" color="#e8b23d" />

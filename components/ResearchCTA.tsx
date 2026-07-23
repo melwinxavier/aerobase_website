@@ -28,7 +28,7 @@ function DottedMap() {
   );
 }
 
-export function GlobalReach() {
+export function ResearchCTA() {
   return (
     <section className="border-t border-white/[0.05]">
       <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,420px)_1fr]">

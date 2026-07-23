@@ -19,7 +19,7 @@ const BENEFITS = [
   "Uncertainty reported with every result",
 ];
 
-export function Analytics() {
+export function Phases() {
   return (
     <section className="relative border-t border-white/[0.05] py-20 md:py-28">
       <ChapterMarker index="3.0" title="The PHASES Platform" color="#4d8bff" />

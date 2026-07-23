@@ -72,7 +72,7 @@ function Gauge({
   );
 }
 
-export function Bufferbloat() {
+export function SafeLight() {
   return (
     <section className="py-20 md:py-28">
       <Container className="md:pl-[280px]">
